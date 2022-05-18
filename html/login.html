@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Julia Presentes </title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/rodape.css">
+  <link rel="stylesheet" href="../style/login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="../IMG/logo/Logo.svg" type="image/x-icon">
+</head>
+
+<body class="active">
+  <!-- Menu Inicio -->
+  <header class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <div class="col-1">
+          <!--Menu hamburguer de login-->
+        </div>
+        <a class="navbar-brand col-2" href="../html/index.html">
+          <img src="../IMG/logo/Logo.svg" alt="Imagem do Logotipo da loja" width="80%" height="80%" />
+        </a>
+        <form class="d-flex col-5">
+          <input class="form-control me-2" type="search" placeholder="Busque aqui" aria-label="Search" />
+          <button class="btn btn-outline" type="submit">
+            <img src="../IMG/icone/lupa.png" alt="Lupa">
+          </button>
+        </form>
+        <div class="col-2">
+          <!--Login e cadastro-->
+        </div>
+        <div class="dosicones col-2,6">
+          <a class="text-white nav-link" href="../html/contato.html"><svg class="iconeheader" width="26"
+              viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+              <g opacity="0.8">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20.4175 7.08151H21.8906C23.0537 7.08151 24 8.02776 24 9.18901V12.0015C24 13.1646 23.0537 14.1109 21.8906 14.1109H20.4087C19.275 16.8334 16.9169 18.8234 14.1094 19.4909V20.4396C14.1094 21.6028 13.1631 22.549 12 22.549C10.8369 22.549 9.89062 21.6028 9.89062 20.4396C9.89062 19.2765 10.8431 18.3303 12.0138 18.3303C15.275 18.3303 18.195 16.2596 19.2806 13.1771L19.2837 13.169C19.7212 11.9621 19.8419 10.6296 19.6306 9.31464C19.5681 8.87464 19.4581 8.44714 19.3013 8.03089L19.2956 8.01526C18.3244 5.29089 15.8725 3.29401 13.0487 2.92589C10.3781 2.57589 7.76437 3.59714 6.0525 5.66026C4.31062 7.75964 3.81562 10.504 4.695 13.1903L4.99688 14.1128H2.10938C0.94625 14.1128 0 13.1665 0 12.0034V9.19089C0 8.02776 0.94625 7.08151 2.10938 7.08151H3.5575C3.90313 6.25901 4.37438 5.47964 4.96938 4.76276C6.9925 2.32464 10.0844 1.11339 13.2313 1.53276C16.4062 1.94526 19.165 4.10714 20.4175 7.08151ZM5.67188 16.9253V15.519C6.3125 15.519 6.85375 15.099 7.02312 14.5059C6.14937 13.3947 5.67188 12.0197 5.67188 10.5972C5.67188 7.10717 8.51062 4.26904 12 4.26904C15.4894 4.26904 18.3281 7.10717 18.3281 10.5972C18.3281 14.0865 15.4894 16.9253 12 16.9253H5.67188ZM15.5156 9.89404H14.1094V11.3003H15.5156V9.89404ZM9.89062 9.89404H8.48438V11.3003H9.89062V9.89404ZM12.7031 9.89404H11.2969V11.3003H12.7031V9.89404Z"
+                  fill="white"></path>
+              </g>
+            </svg>
+            <!-- Favoritos-->
+          </a>
+          <a class="text-white nav-link" href="../html/favoritos.html"><svg class="iconeheader" width="26"
+              viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+              <g opacity="0.8">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 6.1125C24 2.7375 21.225 0 17.775 0C15.15 0 12.9 1.6125 12 3.8625C11.1 1.6125 8.85 0 6.225 0C2.775 0 0 2.7375 0 6.1125C0 6.15 0 6.45 0 6.5625C0 12.8625 12.45 21 12.45 21C12.45 21 24 12.8625 24 6.5625C24 6.45 24 6.1875 24 6.1125Z"
+                  fill="white"></path>
+              </g>
+            </svg></a>
+          <a class="text-white nav-link" href="../html/carrinho.html"><svg class="iconeheader" width="26"
+              viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+              <g opacity="0.8">
+                <path
+                  d="M7.19975 19.2C5.8798 19.2 4.81184 20.28 4.81184 21.6C4.81184 22.92 5.8798 24 7.19975 24C8.51971 24 9.59967 22.92 9.59967 21.6C9.59967 20.28 8.51971 19.2 7.19975 19.2ZM0 0V2.4H2.39992L6.71977 11.508L5.09982 14.448C4.90783 14.784 4.79984 15.18 4.79984 15.6C4.79984 16.92 5.8798 18 7.19975 18H21.5993V15.6H7.70374C7.53574 15.6 7.40375 15.468 7.40375 15.3L7.43974 15.156L8.51971 13.2H17.4594C18.3594 13.2 19.1513 12.708 19.5593 11.964L23.8552 4.176C23.9542 3.99286 24.004 3.78718 23.9997 3.57904C23.9955 3.37089 23.9373 3.16741 23.8309 2.98847C23.7245 2.80952 23.5736 2.66124 23.3927 2.55809C23.2119 2.45495 23.0074 2.40048 22.7992 2.4H5.05183L3.92387 0H0ZM19.1993 19.2C17.8794 19.2 16.8114 20.28 16.8114 21.6C16.8114 22.92 17.8794 24 19.1993 24C20.5193 24 21.5993 22.92 21.5993 21.6C21.5993 20.28 20.5193 19.2 19.1993 19.2Z"
+                  fill="white"></path>
+              </g>
+            </svg></a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Menu Final -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md btn btn-warning">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Todos os produtos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../html/cabo.html">
+                  Cabos
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="../html/fone.html">
+                  Fones
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="../html/pelicula.html">
+                  Películas
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="../html/celular.html">
+                  Celular
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../html/destaque.html">Destaques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../html/desconto.html">Desconto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../html/eletronicos.html">Eletrônicos da Loja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../html/sobre.html">Sobre nós</a>
+          </li>
+      </div>
+    </nav>
+  </header>
+  
+  <br><br><br>
+  <div class="container">
+    <div class="blueBg">
+      <div class="box signin">
+        <h2> Entrar na conta ?</h2>
+        <button class="signinBtn"> Entrar </button>
+      </div>
+      <div class="box signup">
+        <h2> Não tem uma conta ?</h2>
+        <button class="signupBtn"> Cadastrar </button>
+      </div>
+    </div>
+    <div class="formBx">
+      <div class="form signinForm">
+        <form>
+          <h3> Entrar </h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário">
+          <input type="password" placeholder="Senha" id="Senha">
+          <input type="submit" value="Login" id="Login"> <a href="#" class="forgot"> Esqueci a Senha </a>
+        </form>
+      </div>
+      <div class="form signupForm">
+        <form>
+          <h3> Cadastrar </h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário">
+          <input type="text" placeholder="Endereço de Email" id="Nome de Usuário">
+          <input type="password" placeholder="Senha" id="Senha">
+          <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha">
+          <input type="submit" value="Cadastrar" id="Cadastrar">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+
+
+
+  <!--Rodapé--><br /><br /><br /><br /><br /><br /><br />
+  <footer class="text-center text-lg-start text-white">
+    <div class="">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div>
+        <ul class="social_icon">
+          <li>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4"> Julia Presentes </h6>
+              <p>
+                Loja há mais de 17 anos em Taquaritinga, com os melhores
+                produtos, preços e satisfação garantida, credibilidade e
+                confiança você encontra aqui.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Produtos</h6>
+              <p>
+                <a href="../html/celular.html" class="text-reset">
+                  Celular
+                </a>
+              </p>
+              <p>
+                <a href="../html/cabo.html" class="text-reset"> Cabos </a>
+              </p>
+              <p>
+                <a href="../html/fone.html" class="text-reset"> Fones </a>
+              </p>
+              <p>
+                <a href="../html/pelicula.html" class="text-reset">
+                  Películas
+                </a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
+              <p>
+                <i class="fas fa-home me-3">
+                  Rua Prudente De Moraes, nº 449 - Centro Taquaritinga SP
+                </i>
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3">
+                  julia_presentes@gmail.com
+                </i>
+              </p>
+              <p><i class="fas fa-phone me-3"> (16)99201-3279 </i></p>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <p class="copyright">
+          Copyright ©2019 - 2022 | Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
