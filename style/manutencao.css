@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+
+
+#page {
+    z-index: 1;
+    width: 776px;
+    min-height: 641.8315px;
+    background-image: none;
+    border-style: none;
+    border-color: #000000;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 68px 112px 158.1685px;
+}
+
+#u80-4 {
+    z-index: 2;
+    width: 347px;
+    min-height: 30px;
+    background-color: transparent;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    font-family: cabin, sans-serif;
+    font-weight: 500;
+    margin-left: 214px;
+    margin-top: 40px;
+    position: relative;
+}
