@@ -23,15 +23,31 @@
         <a class="navbar-brand col-2" href="../html/index.html">
           <img src="../IMG/logo/Logo.svg" alt="Imagem do Logotipo da loja" width="80%" height="80%" />
         </a>
-        <form class="d-flex col-6">
-          <input class="form-control me-2" type="search" placeholder="Busque aqui" aria-label="Search" />
-          <button class="btn btn-outline" type="submit">
-            <img src="../IMG/icone/lupa.png" alt="Lupa">
+        <form class="display-flex col-6 pesquisa">
+          <input name="conteudo" autocomplete="off" class="form-control me-2 formpesquisa border-0" type="search"
+            placeholder="Busque aqui" aria-label="Search" />
+          <button class="btpesquisa" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24"
+              style=" fill:#000000;">
+              <path
+                d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"
+                alt="Lupa"></path>
+            </svg>
           </button>
         </form>
-        <div class="col-2">
-          <!--Login e cadastro-->
+        <!--Login e cadastro-->
+        <div class="col-2 justify-content-center ">
+          <div class="login__Container-sc-1gtiavm-0 divlogin1">
+            <div class="login__Wrapper-sc-1gtiavm-1 divlogin2">
+              <svg width="32px" height="32px" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fill-opacity="0.01" d="M4.204 4.2H29.83v25.6H4.204z"></path><path fill-rule="evenodd" clip-rule="evenodd"d="M17.017 8.466a4.269 4.269 0 014.272 4.267A4.269 4.269 0 0117.017 17a4.269 4.269 0 01-4.27-4.267 4.269 4.269 0 014.27-4.267zm0 1.6a2.668 2.668 0 00-2.67 2.667 2.668 2.668 0 002.67 2.667 2.668 2.668 0 002.67-2.667 2.668 2.668 0 00-2.67-2.667zm0 8.534c1.478 0 3.53.48 5.175 1.24 2.07.955 3.368 2.246 3.368 3.826 0 1.031-.837 1.867-1.869 1.867H10.344a1.868 1.868 0 01-1.87-1.867c0-1.58 1.3-2.87 3.369-3.826 1.645-.76 3.696-1.24 5.174-1.24zm0 1.6c-1.251 0-3.077.435-4.502 1.093-1.67.77-2.438 1.614-2.438 2.373 0 .148.12.267.267.267H23.69c.148 0 .267-.12.267-.267 0-.76-.77-1.603-2.438-2.373-1.425-.658-3.251-1.093-4.503-1.093z"fill="#fff"></path>
+                <ellipse cx="17.017" cy="17" rx="16.017" ry="16" stroke="#fff" stroke-width="2"></ellipse>
+                </svg><span class="login__Text-sc-1tvnutc-0 spanlogin1"> Olá, faça seu <a href="../html/login.html" class="text-reset"> Login </a>
+                <br><span class="login__Span-sc-1tvnutc-2 spanlogin2"> ou <a href="../html/login.html" class="text-reset"> Cadastre-se </a> </span></span></div>
+            <div color="#fff" width="auto" class="src__Content-sc-1f82cyv-0 iDZocU"></div>
+            <div height="100vh" type="fixed" class="src__OverlayTheme-sc-gb1stn-0 hGPWby"></div>
+          </div>
         </div>
+
         <div class="dosicones col-2,6">
           <a class="text-white nav-link" href="../html/contato.html"><svg class="iconeheader" width="26"
               viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -107,6 +123,7 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="../html/destaque.html">Destaques</a>
           </li>
+          <!-- Desconto n tem página vai redirecionar para o meio da página inicial -->
           <li class="nav-item">
             <a class="nav-link text-white" href="../html/desconto.html">Desconto</a>
           </li>
@@ -116,20 +133,39 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="../html/sobre.html">Sobre nós</a>
           </li>
-          </ul>
+        </ul>
       </div>
     </nav>
   </header>
 
   <main>
     <!-- Inicio carrossel de Imagens -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../IMG/banner/Banner.jpg" class="d-block w-100" alt="Banner" />
+    <div class="col-12">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../IMG/banner/Banner.jpg" class="d-block w-100" alt="Banner">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMG/banner/Banner.jpg" class="d-block w-100" alt="Banner">
+          </div>
+          <div class="carousel-item">
+            <img src="../IMG/banner/Banner.jpg" class="d-block w-100" alt="Banner">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Voltar</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Avançar</span>
+        </button>
       </div>
     </div>
+
     <!-- Cards de compra Inicio --> <br><br><br>
     <div class="container">
       <div class="row ms-auto">
