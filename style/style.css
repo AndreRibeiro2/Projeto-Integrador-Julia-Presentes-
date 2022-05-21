@@ -8,11 +8,7 @@ body {
     padding: 0 24px;
 }
 
-main {
-    background-color: #e5e5e5;
-}
-
-menunav {
+.menunav {
     cursor: default;
 }
 
