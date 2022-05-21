@@ -7,6 +7,9 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    background-image: url("../IMG/banner/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
+}
 
 #page {
     z-index: 1;

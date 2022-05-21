@@ -1,39 +1,45 @@
 body {
-  margin: auto;
-  padding: auto;
+    margin: auto;
+    padding: auto;
 }
 
 .navbar {
-  background-color: #3586FF;
-  padding: 0 24px;
+    background-color: #3586FF;
+    padding: 0 24px;
 }
 
 main {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
+
+menunav {
+    cursor: default;
+}
+
 
 /* Style inputs with type="text", select elements and text areas */
 
 input[type="text"],
 select,
 textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
 
 /* Style the submit button with a specific background color etc 
 
@@ -53,179 +59,181 @@ input[type="submit"]:hover {
 }
 */
 
+
 /* Add a background color and some padding around the form */
 
 .container-chat {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
+
 
 /* Estilo de card  */
 
 .card-sl {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-image img {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 8px 8px 0px 0;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0;
 }
 
 .card-action {
-  position: relative;
-  float: right;
-  margin-top: -25px;
-  margin-right: 20px;
-  z-index: 2;
-  color: #E26D5C;
-  background: #fff;
-  border-radius: 100%;
-  padding: 15px;
-  font-size: 15px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
+    z-index: 2;
+    color: #E26D5C;
+    background: #fff;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-heading {
-  font-size: 18px;
-  font-weight: bold;
-  background: #fff;
-  padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 15px;
 }
 
 .card-text {
-  padding: 10px 15px;
-  background: #fff;
-  font-size: 14px;
-  color: #636262;
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 14px;
+    color: #636262;
 }
 
 .card-button {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  width: 100%;
-  background-color: #1F487E;
-  color: #fff;
-  border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #1F487E;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
 }
 
 .card-button:hover {
-  text-decoration: none;
-  background-color: #1D3461;
-  color: #fff;
-
+    text-decoration: none;
+    background-color: #1D3461;
+    color: #fff;
 }
+
 
 /*Estilo card*/
 
 .Texto-sobre {
-  font-size: 20.5px;
-  justify-content: justify;
+    font-size: 20.5px;
+    justify-content: justify;
 }
 
 .dosicones {
-  display: flex;
-  gap: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
 }
 
 .iconeheader {
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
 }
 
 .dosicones {
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  list-style: none;
-  outline: none;
-  box-sizing: border-box;
-  align-items: center;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .pesquisa {
-  display: flex;
-  width: 100%;
-  background: #fff;
-  border-radius: 8px;
-  height: 40px;
-  box-shadow: rgb(0 0 0 / 12%) 0px 10px 15px;
-  z-index: 0;
-  position: relative;
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    height: 40px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 10px 15px;
+    z-index: 0;
+    position: relative;
 }
 
 .formpesquisa {
-  outline: none;
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 11px 0px 11px 16px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+    outline: none;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 11px 0px 11px 16px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 .formbtpesquisa {
-  width: 100%;
-  transition: all 0.1s ease-in-out 0s;
-  will-change: top;
-  flex: 5 1 0%;
-  max-width: 746px;
-  padding: 0px 48px;
+    width: 100%;
+    transition: all 0.1s ease-in-out 0s;
+    will-change: top;
+    flex: 5 1 0%;
+    max-width: 746px;
+    padding: 0px 48px;
 }
 
 .btpesquisa {
-  width: 40px;
-  border: none;
-  background: none;
-  padding: 4px 12px 4px 0px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+    width: 40px;
+    border: none;
+    background: none;
+    padding: 4px 12px 4px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
 .divlogin1 {
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  height: 45px;
-  -webkit-box-align: center;
-  align-items: center;
-  flex: 1 1 0%;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    height: 45px;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
 }
 
 .divlogin2 {
-  display: flex;
-  text-decoration: none;
-  width: auto;
-  cursor: default;
-  position: relative;
-  height: 80px;
-  -webkit-box-align: center;
-  align-items: center;
-  white-space: nowrap;
-  transition: all 0.3s ease 0s;
-  z-index: 0;
+    display: flex;
+    text-decoration: none;
+    width: auto;
+    cursor: default;
+    position: relative;
+    height: 80px;
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: all 0.3s ease 0s;
+    z-index: 0;
 }
 
 .spanlogin1 {
-  margin-left: 8px;
-  line-height: 18px;
-  font-size: 14px;
-  font-weight: 700;
+    margin-left: 8px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .spanlogin2 {
-  display: flex;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  align-items: center;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
 }
