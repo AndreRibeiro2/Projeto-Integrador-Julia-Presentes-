@@ -64,6 +64,8 @@ body.active {
     border: none;
 }
 
+/* Cor do formulário login e registro */
+
 .formBx {
     position: absolute;
     top: 0;
@@ -143,7 +145,7 @@ body.active {
 }
 
 .formBx.active .signupForm input[type="submit"] {
-    background: #e8ff18;
+    background: #ffdc18;
 }
 
 .formBx .form form .forgot {
