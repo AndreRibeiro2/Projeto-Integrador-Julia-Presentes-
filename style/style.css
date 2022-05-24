@@ -8,10 +8,9 @@ body {
     padding: 0 24px;
 }
 
-.menunav {
-    cursor: default;
+main {
+ background-color: #ebe8e8;
 }
-
 
 /* Style inputs with type="text", select elements and text areas */
 

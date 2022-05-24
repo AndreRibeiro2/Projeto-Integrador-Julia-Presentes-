@@ -16,7 +16,7 @@ body {
 }
 
 body.active {
-    background: #bdb8ae;
+    background: #ebe8e8;
 }
 
 .container {
@@ -186,4 +186,8 @@ body.active {
         left: 0;
         top: 150px;
     }
+}
+
+main {
+    margin-top: 13%;
 }
