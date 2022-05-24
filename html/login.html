@@ -10,7 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   <link rel="shortcut icon" href="../IMG/logo/Logo.svg" type="image/x-icon" />
-  <script src="../js/login.js" async></script>
 </head>
 
 <body class="active">
@@ -165,8 +164,8 @@
         <div class="form signinForm">
           <form>
             <h3>Entrar</h3>
-            <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário" />
-            <input type="password" placeholder="Senha" id="Senha" />
+            <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário 1" />
+            <input type="password" placeholder="Senha" id="Senha 1" />
             <input type="submit" value="Login" id="Login" />
             <a href="#" class="forgot"> Esqueci a Senha </a>
           </form>
@@ -175,10 +174,10 @@
           <form>
             <h3>Cadastrar</h3>
             <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário" />
-            <input type="text" placeholder="Endereço de Email" id="Nome de Usuário" />
+            <input type="text" placeholder="Endereço de Email" id="Endereço de Email" />
             <input type="password" placeholder="Senha" id="Senha" />
             <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha" />
-            <input type="submit" value="Cadastrar" id="Cadastrar" />
+            <input type="submit" value="Cadastrar" id="Cadastrar" onclick="alerta()"/>
           </form>
         </div>
       </div>
@@ -187,6 +186,8 @@
 
   </main>
 
+
+  <script src="../js/login.js" async></script>
   <!--Rodapé-->
   <footer class="text-center text-lg-start text-white">
     <div>
@@ -280,13 +281,13 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   -->
-  </body>
+</body>
 
 </html>
