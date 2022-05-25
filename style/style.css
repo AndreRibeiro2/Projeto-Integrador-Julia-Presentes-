@@ -237,24 +237,3 @@ input[type="submit"]:hover {
 .pagamento {
     background-color: #1F487E;
 }
-
-.borda {
-    position:relative;
-    padding:0 20px;       /* espaço nas laterais     */
-    font-size:20px;
-  }
-
-  .borda:before,.borda:after {
-    content:''; display:block;position:absolute;
-    border:1px solid black;
-    top:8px; bottom:8px; /* espaço no topo e embaixo */
-    width:13px;          /* largura das "chaves"     */
-  }
-  
-  .borda:before {
-    left:2px; border-right:none;
-  }
-  
-  .borda:after {
-    right:2px; border-left:none;
-  }
