@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="../IMG/logo/Logo.svg" type="image/x-icon" />
 </head>
 
-<body class="active">
+<body>
   <!-- Menu Inicio -->
   <header class="menu">
     <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md">
@@ -147,8 +147,8 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container pt-50">
+
+    <div class="container">
       <div class="blueBg">
         <div class="box signin">
           <h2>Entrar na conta ?</h2>
@@ -161,7 +161,7 @@
       </div>
       <div class="formBx">
         <div class="form signinForm">
-          <form>
+          <form id="logar">
             <h3>Entrar</h3>
             <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário 1" />
             <input type="password" placeholder="Senha" id="Senha 1" />
@@ -170,21 +170,17 @@
           </form>
         </div>
         <div class="form signupForm">
-          <form>
+          <form id="cadastro">
             <h3>Cadastrar</h3>
             <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário" />
             <input type="text" placeholder="Endereço de Email" id="Endereço de Email" />
             <input type="password" placeholder="Senha" id="Senha" />
             <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha" />
-            <input type="submit" value="Cadastrar" id="Cadastrar" onclick="alerta()"/>
+            <input type="submit" value="Cadastrar" id="Cadastrar""/>
           </form>
         </div>
       </div>
-    </div>
-    <br /><br /><br /><br /><br><br><br><br>
-
-  </main>
-
+    </div> <br><br><br></br>
 
   <script src="../js/login.js" async></script>
   
@@ -220,7 +216,7 @@
             </a>
           </li>
         </ul>
-        <div class="container text-center text-md-start mt-5">
+        <div class="text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Julia Presentes</h6>
