@@ -36,13 +36,8 @@
         <div class="justify-content-center">
           <div class="login__Container-sc-1gtiavm-0 divlogin1">
             <div class="login__Wrapper-sc-1gtiavm-1 divlogin2">
-              <svg width="32px" height="32px" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#fff" fill-opacity="0.01" d="M4.204 4.2H29.83v25.6H4.204z"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M17.017 8.466a4.269 4.269 0 014.272 4.267A4.269 4.269 0 0117.017 17a4.269 4.269 0 01-4.27-4.267 4.269 4.269 0 014.27-4.267zm0 1.6a2.668 2.668 0 00-2.67 2.667 2.668 2.668 0 002.67 2.667 2.668 2.668 0 002.67-2.667 2.668 2.668 0 00-2.67-2.667zm0 8.534c1.478 0 3.53.48 5.175 1.24 2.07.955 3.368 2.246 3.368 3.826 0 1.031-.837 1.867-1.869 1.867H10.344a1.868 1.868 0 01-1.87-1.867c0-1.58 1.3-2.87 3.369-3.826 1.645-.76 3.696-1.24 5.174-1.24zm0 1.6c-1.251 0-3.077.435-4.502 1.093-1.67.77-2.438 1.614-2.438 2.373 0 .148.12.267.267.267H23.69c.148 0 .267-.12.267-.267 0-.76-.77-1.603-2.438-2.373-1.425-.658-3.251-1.093-4.503-1.093z"
-                  fill="#fff"></path>
-                <ellipse cx="17.017" cy="17" rx="16.017" ry="16" stroke="#fff" stroke-width="2"></ellipse>
-              </svg><span class="login__Text-sc-1tvnutc-0 spanlogin1">
+              <img src="../IMG/icone/loginfoto.svg" id="fotoperfil" alt=""><span
+                class="login__Text-sc-1tvnutc-0 spanlogin1">
                 Olá, faça seu
                 <a href="../html/login.html" class="text-reset"> Login </a>
                 <br /><span class="login__Span-sc-1tvnutc-2 spanlogin2">
@@ -148,42 +143,59 @@
   </header>
 
 
-    <div class="container">
-      <div class="blueBg">
-        <div class="box signin">
-          <h2>Entrar na conta ?</h2>
-          <button class="signinBtn">Entrar</button>
-        </div>
-        <div class="box signup">
-          <h2>Não tem uma conta ?</h2>
-          <button class="signupBtn">Cadastrar</button>
-        </div>
+  <div class="container">
+    <div class="blueBg">
+      <div class="box signin">
+        <h2>Entrar na conta ?</h2>
+        <button class="signinBtn">Entrar</button>
       </div>
-      <div class="formBx">
-        <div class="form signinForm">
-          <form id="logar">
-            <h3>Entrar</h3>
-            <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário 1" />
-            <input type="password" placeholder="Senha" id="Senha 1" />
-            <input type="submit" value="Login" id="Login" />
-            <a href="#" class="forgot"> Esqueci a Senha </a>
-          </form>
-        </div>
-        <div class="form signupForm">
-          <form id="cadastro">
-            <h3>Cadastrar</h3>
-            <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário" />
-            <input type="text" placeholder="Endereço de Email" id="Endereço de Email" />
-            <input type="password" placeholder="Senha" id="Senha" />
-            <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha" />
-            <input type="submit" value="Cadastrar" id="Cadastrar""/>
-          </form>
-        </div>
+      <div class="box signup">
+        <h2>Não tem uma conta ?</h2>
+        <button class="signupBtn">Cadastrar</button>
       </div>
-    </div> <br><br><br></br>
+    </div>
+    <div class="formBx">
+      <div class="form signinForm">
+        <form id="logar">
+          <h3>Entrar</h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário 1" />
+          <input type="password" placeholder="Senha" id="Senha 1" />
+          <input type="submit" value="Login" id="Login" />
+          <a href="#" class="forgot"> Esqueci a Senha </a>
+        </form>
+      </div>
+      <div class="form signupForm">
+        <form id="cadastro">
+          <h3>Cadastrar</h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário" />
+          <input type="text" placeholder="Endereço de Email" id="Endereço de Email" />
+          <input type="password" placeholder="Senha" id="Senha" />
+          <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha" />
+          <input type="submit" value="Cadastrar" id="Cadastrar""/>
+          </form>
+
+
+          <button id="signinGoogle" class="rounded-circle">
+          <img src="../IMG/icone/facebook.svg" alt="">
+          </button>
+      </div>
+    </div>
+  </div> <br><br><br></br>
+
+
 
   <script src="../js/login.js" async></script>
-  
+
+  <script src="../js/firebase.js" type="module" defer></script>
+
+  <script type="module">
+    import { signinGoogle } from '../js/firebase.js';
+
+    const googlebtn = document.getElementById("signinGoogle");
+    googlebtn.addEventListener("click", () => signinGoogle());
+  </script>
+
+
   <!--Rodapé-->
   <footer class="text-center text-lg-start text-white">
     <div>
@@ -277,13 +289,14 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+  </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   -->
+
 </body>
 
 </html>

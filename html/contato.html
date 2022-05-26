@@ -145,6 +145,17 @@
 
 
   <main>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Enviado</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Sua mensagem foi enviada com sucesso!
+        </div>
+      </div>
+    </div>
     <br /><br /><br />
 
     <div class="contactUs">
@@ -157,37 +168,46 @@
               <div class="row50">
                 <div class="inputBox">
                   <span> Primeiro Nome </span>
-                  <input type="text" placeholder="Lisa" />
+                  <input id="user-name" type="text" placeholder="Lisa" required />
                 </div>
                 <div class="inputBox">
-                  <span> Segundo Nome </span>
-                  <input type="text" placeholder="Test" />
+                  <span> Sobrenome </span>
+                  <input id="user-surname" type="text" placeholder="Test" />
                 </div>
               </div>
               <div class="row50">
                 <div class="inputBox">
                   <span> Endereço de E-mail </span>
-                  <input type="text" placeholder="lisatestemail@email.com" />
+                  <input id="user-email" type="e-mail" placeholder="lisatestemail@email.com" required />
                 </div>
                 <div class="inputBox">
                   <span> Celular </span>
-                  <input type="text" placeholder="(99) 99999-9999" />
+                  <input id="user-celphone" type="text" placeholder="(99) 99999-9999" />
                 </div>
               </div>
               <div class="row100">
                 <div class="inputBox">
                   <span> Mensagem </span>
-                  <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
+                  <textarea id="user-message" placeholder="Escreva sua mensagem aqui..." required ></textarea>
                 </div>
               </div>
 
-              <div class="row100">
+              <div class="row-100">
                 <div class="inputBox">
-                  <input type="submit" value="Enviar" name="enviar" id="enviar" />
+                  <button class="enviar" value="Enviar" id="user-submit-contact">
+                    Enviar
+                  </button>
+                  <!-- Botão para verificar no console o envio do formulário -->
+                  <div class="row-100">
+                    <button hidden id="xyz">
+                      Pegar contatos
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </form>
+
         </div>
 
         <!-- Informação  -->
@@ -233,8 +253,8 @@
         <div class="contact map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.5122553726774!2d-48.5044548!3d-21.4091013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b93968baf2406f%3A0x4c37fb670513ca8c!2sJulia%20Presentes%20-%20Capas%20de%20celulares%20-%20Pel%C3%ADculas%20-%20Eletr%C3%B4nicos!5e0!3m2!1spt-BR!2sbr!4v1651715304756!5m2!1spt-BR!2sbr"
-            style="border: 0" allowfullscreen="true" loading="eager"
-            referrerpolicy="no-referrer-when-downgrade" async></iframe>
+            style="border: 0" allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade"
+            async></iframe>
         </div>
       </div>
     </div>
@@ -326,7 +346,38 @@
       </div>
     </div>
   </footer>
-  
+
+  <script src="../js/firebase.js" type="module" defer></script>
+
+  <script type="module">
+    import { auth, getContacts, postContacts, toggleToast } from '../js/firebase.js';
+
+    const submitContactBtn = document.getElementById("user-submit-contact");
+    const pegarcontato = document.getElementById("xyz");
+
+    const onSubmitContact = (event) => {
+      event.preventDefault();
+      
+      const name = document.getElementById("user-name").value;
+      const surname = document.getElementById("user-surname").value;
+      const celphone = document.getElementById("user-celphone").value;
+      const email = document.getElementById("user-email").value;
+      const message = document.getElementById("user-message").value;
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+
+      const toast = new bootstrap.Toast(toastLiveExample);
+
+      if (email !== "" && message !== "" && name !== "") {
+        postContacts(name, surname, celphone, email, message, toast);
+      }
+    }
+
+    submitContactBtn.addEventListener("click", (event) => onSubmitContact(event));
+    pegarcontato.addEventListener("click", () => getContacts());
+  </script>
+
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -342,5 +393,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   -->
+
 </body>
+
 </html>
