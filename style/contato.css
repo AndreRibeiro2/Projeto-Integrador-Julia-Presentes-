@@ -122,6 +122,17 @@ body {
     padding: 14px 15px;
 }
 
+.enviar{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
 .inputBox ::placeholder {
     color: #999;
 }
